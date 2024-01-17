@@ -1,0 +1,160 @@
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.181);
+  /* display: inline-block; */
+  display: flex;
+  padding-left: 20px;
+}
+select {
+  border: none;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.651);
+  font-weight: 500;
+  margin-left: 10px;
+  
+}
+/* search  */
+/* this is a recreation of twitter search in css */
+.form {
+  --input-text-color: black;
+  --input-bg-color: #fff;
+  --focus-input-bg-color: transparent;
+  --text-color: #000000;
+
+  --width-of-input: 320px;
+  --inline-padding-of-input: 1.2em;
+  --gap: 0.9rem;
+  margin-left: 30%;
+  margin-top: 10px;
+}
+/* form style */
+.form {
+  font-size: 8px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: var(--width-of-input);
+  position: relative;
+  isolation: isolate;
+}
+/* a fancy bg for showing background and border when focus. */
+.fancy-bg {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background: var(--input-bg-color);
+  border-radius: 30px;
+  height: 70%;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* label styling */
+label {
+  width: 100%;
+  padding: 0.8em;
+  height: 40px;
+  padding-inline: var(--inline-padding-of-input);
+  display: flex;
+  align-items: center;
+}
+
+.search,
+.close-btn {
+  position: absolute;
+  padding-bottom: 18px;
+  padding-left: 10px;
+}
+/* styling search-icon */
+svg {
+  width: 17px;
+  display: block;
+}
+/* styling of close button */
+.close-btn {
+  border: none;
+  right: var(--inline-padding-of-input);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--active-color);
+  opacity: 0;
+  visibility: hidden;
+}
+/* styling of input */
+.input {
+  color: var(--input-text-color);
+  width: 100%;
+  margin-inline: min(2em, calc(var(--inline-padding-of-input) + var(--gap)));
+  background: none;
+  border: none;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  letter-spacing: 2px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: black;
+}
+/* input background change in focus */
+
+/* search icon color change in focus */
+.input:focus ~ .search {
+  fill: var(--active-color);
+}
+/* showing close button when typing */
+
+.star {
+    color: rgb(20, 168, 0);
+    font-size: 20px;
+}
+#background-div {
+  width: 92.5%;
+  height: 650px; /* Set the height as needed */
+  border-radius: 9px;
+  background-image: url('./5pageimg.webp'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover;
+  color: white; /* Text color on top of the background image */
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.footer{
+  font-size: 23px;
+  height: 35px;
+  width: 400px;
+  color: #0000008f;
+  cursor: pointer;
+}
+.footer1{
+  font-size: 34px;
+  height: 35px;
+  width: 400px;
+  color: rgb(20, 168, 0);
+  cursor: pointer;
+
+}
+.footer:hover{
+  color: rgb(20, 168, 0);
+}
+.bottomfooter{
+  width: 300px;
+  height: 25px;
+  color: #fff;
+  font-size: 13px;
+}
+table tr td:hover{
+  background-color: rgb(228, 235, 228);
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+
+}
